@@ -1,15 +1,30 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка файлов</title>
+    <link rel="stylesheet" href="{% static 'upload/css/main.css' %}">
 </head>
 <body>
-<h1>Загрузите файл</h1>
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Загрузить</button>
-</form>
+    <div class="upload-container">
+        <h1>Загрузить файл</h1>
+        <p>Выберите файл для загрузки</p>
+
+        <!-- Форма для загрузки файла -->
+        <form action="{% url 'file_upload' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <!-- Поле загрузки файла -->
+            <label class="custom-file-upload">
+                <input type="file" name="file" id="file-upload" required>
+                Выбрать файл
+            </label>
+
+            <!-- Кнопка отправки -->
+            <button type="submit">Загрузить</button>
+        </form>
+    </div>
 </body>
 </html>
