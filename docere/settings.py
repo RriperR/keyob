@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-8o$rj9b4f(%8w)o5*ey6&51cah#s0b39sh+to623$yfds-pf04
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['leading-latia-riperrr-7824d7b2.koyeb.app']
+ALLOWED_HOSTS = ['leading-latia-riperrr-7824d7b2.koyeb.app', 'localhost', '127.0.0.1']
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
