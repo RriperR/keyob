@@ -14,7 +14,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8o$rj9b4f(%8w)o5*ey6&51cah#s0b39sh+to623$yfds-pf04'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['leading-latia-riperrr-7824d7b2.koyeb.app', 'localhost', '127.0.0.1']
 
